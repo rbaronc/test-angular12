@@ -1,0 +1,16 @@
+<mat-grid-list cols="3" rowHeight="5rem">
+    <mat-grid-tile>
+        <button mat-button color="primary" (click)="decrementcounter()">Decrement</button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div matBadge="{{count}}" matBadgeSize="large" class="demo-section"></div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button mat-button color="primary" (click)="incrementcounter()">Increment</button>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <button mat-button color="primary" (click)="resetcounter()">Reset</button>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
