@@ -11,6 +11,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { CounterComponent } from './counter/counter.component';
 import { StoreModule } from '@ngrx/store';
 
+import { counterReducer } from './state/counter.reducer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,7 @@ import { StoreModule } from '@ngrx/store';
     MatIconModule,
     MatGridListModule,
     MatBadgeModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({ count: counterReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
         <button mat-button color="primary" (click)="decrementcounter()">Decrement</button>
     </mat-grid-tile>
     <mat-grid-tile>
-        <div matBadge="{{count}}" matBadgeSize="large" class="demo-section"></div>
+        <div matBadge="{{ count$ | async }}" matBadgeSize="large" class="demo-section"></div>
     </mat-grid-tile>
     <mat-grid-tile>
         <button mat-button color="primary" (click)="incrementcounter()">Increment</button>
